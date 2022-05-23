@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    background: var(--clr-primary-10);
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: var(--clr-primary-1);
+}
+
+.title {
+    width: 79vw;
+    margin: auto;
+}
+
+.title h3 {
+    font-size: 2rem;
+}
+
+.title h3 a {
+    color: var(--clr-primary-3);
+    padding: 0.5rem;
+    transition: var(--transition);
+    text-decoration: none;
+}

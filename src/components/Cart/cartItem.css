@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    min-height: calc(80vh - 10rem);
+}
+
+.centerCart {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 5rem 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+
+.cartContent h5 {
+    font-size: 1rem;
+    color: var(--clr-grey-5);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.cartItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    gap: 3rem 1rem;
+    place-items: center;
+    margin-bottom: 3rem;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-rows: 75px;
+}
+
+.cartTitle {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 200px;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.cartTitle img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: var(--radius);
+    object-fit: cover;
+}
+
+.cartItems .name {
+    font-size: 0.85rem;
+    margin-bottom: 0px;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+
+.cartItems .priceSmall {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    /* display: none; */
+}
+
+.cartItems .price {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+
+.cartItems .amountBtns button {
+    width: 2rem;
+    height: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 1rem 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.cartItems .amountBtns h2 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+.subTotal {
+    display: block;
+    margin-bottom: 0px;
+    color: var(--clr-grey-5);
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+}
+
+.amountBtns {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-align: center;
+}
+
+.amountBtns .amountBtn {
+    font-size: 2rem;
+}
+
+.removeBtn {
+    color: var(--clr-white);
+    border: transparent;
+    letter-spacing: var(--spacing);
+    background: var(--clr-red-dark);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.linkContainer {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.linkBtn {
+    border-color: transparent;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    background: var(--clr-primary-5);
+    color: var(--clr-white);
+    border-radius: var(--radius);
+    letter-spacing: var(--spacing);
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkBtn:hover {
+    color: white;
+}
+
+.clearBtn {
+    border-color: transparent;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    background: var(--clr-black);
+    color: var(--clr-white);
+    border-radius: var(--radius);
+    letter-spacing: var(--spacing);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.totalValue {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.totalValue article {
+    border: 1px solid var(--clr-grey-8);
+    border-radius: var(--radius);
+    padding: 1.5rem 3rem;
+}
+
+.totalValue h5 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    font-size: 1rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+.totalValue p {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    text-transform: capitalize;
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-3);
+}
+
+.totalValue h4 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    line-height: 1;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+}
+
+.loginBtn {
+    text-transform: uppercase;
+    background: var(--clr-primary-5);
+    color: var(--clr-primary-10);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    transition: var(--transition);
+    font-size: .875rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+    border-radius: 0.25rem;
+    border-radius: var(--radius);
+    border-color: transparent;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (min-width: 776px) {
+    .centerCart {
+        max-width: 78%;
+        margin: 0 auto;
+    }
+
+    .cartHead {
+        display: block;
+    }
+
+    .cartHead .cartContent {
+        display: grid;
+        grid-template-columns: 316px 1fr 1fr 1fr auto;
+        justify-items: center;
+        column-gap: 1rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .cartHead {
+        display: none;
+    }
+
+    .cartItems {
+        display: grid;
+        grid-template-columns: 200px auto auto;
+        grid-template-rows: 75px;
+        gap: 3rem 1rem;
+        place-items: center;
+        margin-bottom: 3rem;
+        -webkit-box-align: center;
+    }
+
+    .cartTitle {
+        grid-template-rows: 75px;
+        display: grid;
+        grid-template-columns: 75px 125px;
+        -webkit-box-align: center;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .amountBtn {
+        width: 1rem;
+        height: 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .price {
+        display: none;
+    }
+
+    .subTotal {
+        display: none;
+    }
+
+    .centerCart {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .totalValue {
+        margin-top: 3rem;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+
+    .totalValue h5 {
+        font-size: 0.875;
+    }
+
+    .linkContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+}

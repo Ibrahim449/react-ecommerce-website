@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 74%;
+    height: 90vh;
+    /* background-color: aliceblue; */
+    /* overflow: hidden; */
+    margin: auto;
+    padding: 20px;
+}
+
+.header .gridHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 83vh;
+    /* background-color: aliceblue; */
+}
+
+.rightSide {
+    width:100%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 100px;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+}
+
+.rightSide::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 270px;
+    z-index: -1;
+    width: 70px;
+    height: 280px;
+    background-color: #decbc0;
+}
+
+.rightSide img:first-child {
+    width: 300px;
+    border-radius: 10px; 
+}
+
+.rightSide img:last-child {
+    width: 160px;
+    position: absolute;
+    bottom: 5px;
+    right: 220px;
+    border-radius: 10px;
+}
+
+/* leftside starts from here */
+.gridHead .leftSide {
+    /* background-color: yellowgreen; */
+    width: 100%;
+    padding: 5px;
+}
+
+.gridHead .leftSide h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.gridHead .leftSide p {
+    margin: 30px 0px;
+    color: #666;
+    /* background-color: aliceblue; */
+    width: 90%;
+    font-size: 1.25rem;
+}
+
+.gridHead .leftSide button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-color: transparent;
+    display: inline-block;
+    font-weight: 400;
+    background-color: #ab7a5f;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+/* media query starts from here */
+@media only screen and (max-width: 998px) {
+    .header .gridHead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .gridHead .leftSide {
+        width: 100%;
+    }
+
+    .gridHead .rightSide {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        width: 95%;
+        height: 70vh;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .header .gridHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 65vh;
+        /* background-color: aliceblue; */
+    }
+
+    .gridHead .leftSide h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .gridHead .leftSide p {
+        margin: 30px 0px;
+        color: #666;
+        /* background-color: aliceblue; */
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+.gridHead .leftSide button {
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    border-color: transparent;
+    display: inline-block;
+    font-weight: 400;
+    background-color: #ab7a5f;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+}
